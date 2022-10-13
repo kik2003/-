@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk-UK">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'MiHome/css/main.css'%}">
+
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="ti"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Всі Записи </font></font></span>
+      </a>
+
+
+    </div>
+    {% block content %}
+    {% endblock%}
+</body>
+</html>

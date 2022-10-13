@@ -1,0 +1,21 @@
+{% extends 'MiHome/ho.html' %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{form.data}}
+
+        <button class="s" type="submit">To send</button></br>
+    </form>
+    {% for el in i_receive%}
+        <input class="s" type="button" onclick="window.location.href='{{el}}'"value="{{el}}">
+    {% endfor %}
+    <br>
+<!--    {% for el in record %}-->
+<!--        {% if not el.time is None %}-->
+<!--            <h3> {{el.name}} </h3>-->
+<!--            <h3> {{el.number}} </h3>-->
+<!--            <h3> {{el.time}} </h3>-->
+<!--        {% endif %}-->
+<!--    {% endfor %}-->
+{% endblock%}

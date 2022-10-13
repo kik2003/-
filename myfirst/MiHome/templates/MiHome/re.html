@@ -1,0 +1,13 @@
+{% extends 'MiHome/ho.html' %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{form.name}}</br>
+        {{form.number}}</br>
+        {{form.time}}</br>
+<!--        <span class="validity"></span>-->
+<!--        {{form.data}}</br>-->
+        <button type="submit">записатися</button>
+        <span>{{error}}</span>
+    </form>
+{% endblock%}
